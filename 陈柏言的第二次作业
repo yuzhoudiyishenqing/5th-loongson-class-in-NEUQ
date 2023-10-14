@@ -1,0 +1,26 @@
+module top_module(
+    input pla,plb,plc,pld,ple,plf,
+    output ply;
+    input pea,peb,pec,ped,
+    output pey, 
+)
+    wire w;
+    wire x;
+    wire z;
+    wire y;
+    assign w=pea&peb;
+    assign x=pec&ped;
+    assign y=pla&plb&plc;
+    assign z=pld&ple&plf;
+    assign ply=y|z;
+    assign pey=w|x;
+endmodule
+第三次作业
+module top_module(
+    input a,
+    input b.
+    input c,
+    input y,
+)
+    assign y=a&b||a&C||b&c;
+endmodule
